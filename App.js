@@ -29,15 +29,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import SplashScreen from './src/module/SplashScreen/index.js';
-import LoginScreen from './src/module/Login';
-import AppButton from './src/component/base_component/AppButton';
-import MusicApp from './src/module/MusicApp';
-import KeyBo from './src/module/Keyboard';
-import Final from './src/module/Final';
-import MovingAnim from './src/module/MovingAnim';
-import Sample from './src/module/Sample';
-//import MusicApp from './src/module/Keyboard';
-//import { styles } from './src/component/base_component/AppButton/style';
+
 
 
 const styles = StyleSheet.create({
@@ -62,16 +54,6 @@ const styles = StyleSheet.create({
   }
 })
 
-// const AppButton = ({ onPress, title }) => (
-//   <TouchableOpacity
-//     activeOpacity={0.8}
-//     onPress={onPress}
-//     style={styles.appButtonContainer}
-//   >
-//     <Text style={styles.appButtonText}>{title}</Text>
-//   </TouchableOpacity>
-// );
-
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -81,7 +63,7 @@ const App = () => {
 
   return (
     <View style={styles.screenContainer}>
-      <Sample/>
+      <SplashScreen/>
   </View>
   );
 };

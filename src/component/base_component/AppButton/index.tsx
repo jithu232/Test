@@ -6,7 +6,6 @@ const AppButton = ({ onPress, title,color }) => (
   <TouchableOpacity
     activeOpacity={0.8}
     onPress={onPress}
-    
     style={{backgroundColor:color,justifyContent: 'center',
     height:50,
     borderRadius: 50,
