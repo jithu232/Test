@@ -43,9 +43,9 @@ function SplashScreen(){
        
       }  
     turnOn = () => {
-      // NativeModules.GetIP.turnOn();
-      NativeModules.RcvDeviceInfo.getStatus((error, ipAddress) => {
-        setDeviceId(ipAddress);
+      
+      NativeModules.RcvDeviceInfo.getStatus((error, id) => {
+        setDeviceId(id);
         console.log(deviceID)
       });
     };
